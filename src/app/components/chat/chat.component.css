@@ -1,0 +1,188 @@
+/* Global */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f5f7; 
+  color: #333;
+}
+
+
+section {
+  background-color: #f4f5f7; 
+  padding: 20px;
+}
+
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background-color: #ffffff;
+  border-top: 5px solid #075e54; 
+  color: #075e54; 
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.card-header .btn {
+  border-radius: 50%;
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  margin-left: 8px;
+}
+
+.card-body {
+  padding: 20px;
+  background-color: #ffffff;
+  height: 400px; 
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Message Container */
+.message-container {
+  height: 350px; 
+  overflow-y: auto;
+}
+
+.message-container .message-sender {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.message-container .message-receiver {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.message-container .message-sender p,
+.message-container .message-receiver p {
+  max-width: 60%;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.message-container .message-sender p {
+  background-color: #128c7e; 
+  color: #075e54;
+  border-radius: 10px 10px 0 10px;
+}
+
+.message-container .message-receiver p {
+  background-color: #075e54; 
+  color: #333;
+  border-radius: 10px 10px 10px 0;
+}
+
+.message-container i {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+
+.card-footer {
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+.input-group .form-control {
+  border-radius: 0; 
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #075e54;
+}
+
+.input-group .btn-primary {
+  background-color: #075e54; 
+  color: white;
+  border-radius: 0; 
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.input-group .btn-primary:hover {
+  background-color: #128c7e; 
+}
+
+
+.card-header .btn-primary {
+  background-color: #075e54;
+  border-radius: 50%;
+  color: #075e54;
+  padding: 12px;
+  font-size: 1.2rem;
+}
+
+.card-header .btn-primary:hover {
+  background-color: #128c7e;
+}
+
+
+.button-group .btn {
+  border-radius: 0; 
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.button-group .btn-disconnect {
+  background-color: #075e54; 
+  color: white;
+  border-radius: 0; 
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.button-group .btn-disconnect:hover {
+  background-color: #128c7e;
+}
+
+.button-group .btn-logout {
+  background-color: #075e54; 
+  color: white;
+  border-radius: 0; 
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.button-group .btn-logout:hover {
+  background-color: #d1d1d1;
+}
+
+
+@media (max-width: 767px) {
+  .card {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .card-header {
+    font-size: 1rem;
+  }
+
+  .input-group .form-control {
+    font-size: 12px;
+  }
+
+  .input-group .btn-primary {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .message-container {
+    height: 300px;
+  }
+}

@@ -1,0 +1,54 @@
+<section style="background-color: #128c7e;">
+  <div class="container py-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-8 col-lg-6 col-xl-4">
+        <div class="card">
+          <div class="card-header d-flex justify-content-between align-items-center p-3" style="border-top: 4px solid #128c7e">
+            <h5 class="mb-0">Mensajeria:</h5>
+          </div>
+          <div class="card-body" data-mdb-perfect-scrollbar="true" style="position: relative; height: 400px; overflow-y: scroll; scrollbar-color: #128c7e #ffffff; scrollbar-width: thin;">
+            <div class="message-container">
+              <div *ngFor="let item of recibidoEnviadoSms">
+                <div *ngIf="item.message_side === 'sender'">
+                  <div class="d-flex justify-content-end">
+                    <p class="small mb-1">{{ item.user }}</p>
+                  </div>
+                  <div class="d-flex flex-row justify-content-end mb-4 pt-1">
+                    <div>
+                      <p class="small p-2 me-3 mb-3 text-white rounded-3 bg-primary">
+                        {{ decifrarSms(item.message) }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div *ngIf="item.message_side === 'receiver'">
+                  <div class="d-flex justify-content-start">
+                    <p class="small mb-1">{{ item.user }}</p>
+                  </div>
+                  <div class="d-flex flex-row justify-content-start">
+                    <div>
+                      <p class="small p-2 ms-3 mb-3 rounded-3" style="background-color: #128c7e;">
+                        {{ decifrarSms(item.message) }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer text-muted p-3">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Escribe algo...." aria-label="Recipient's username" aria-describedby="button-addon2" [(ngModel)]="almacenarSms"/>
+              <button class="btn btn-primary" type="button" id="button-addon2" (click)="enviarSms()">Enviar</button>
+            </div>
+            <div class="button-group">
+              <button class="btn btn-disconnect" type="button" (click)="reconectar()">Reconectar</button>
+              <button class="btn btn-logout" type="button" (click)="desconectar()">Desconectar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

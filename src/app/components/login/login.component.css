@@ -1,0 +1,83 @@
+/* Global */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e5ddd5; 
+}
+
+/* Section */
+.chat-section {
+    background-color: #075e54; 
+    height: 100%;
+}
+
+/* Container */
+.container {
+    height: 100%;
+}
+
+/* Card */
+.card {
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Body */
+.card-body {
+    padding: 40px;
+    background-color: #ffffff; 
+    text-align: center; 
+}
+
+/* Title */
+h3 {
+    font-size: 2rem;
+    color: #075e54; 
+    font-weight: 700;
+}
+
+/* Form */
+.form-outline {
+    margin-bottom: 1.5rem;
+    text-align: left; 
+}
+
+.form-control {
+    border-radius: 0.5rem;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ced4da; 
+}
+
+.form-control:focus {
+    border-color: #128c7e; 
+    box-shadow: 0 0 5px rgba(18, 140, 126, 0.5); 
+}
+
+
+label {
+    font-size: 14px;
+    color: #128c7e; 
+    font-weight: bold; 
+}
+
+/* Button */
+.btn {
+    border-radius: 0.5rem;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #128c7e; 
+    border: none;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #075e54; 
+}

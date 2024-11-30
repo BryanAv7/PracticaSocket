@@ -1,0 +1,21 @@
+<section class="vh-100 chat-section">
+  <div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="mb-5">¡Bienvenidos!</h3>
+
+            <div class="form-outline mb-4">
+              <label for="username">Ingrese el nombre de usuario:</label>
+              <br><br>
+              <input type="email" id="username" class="form-control" [(ngModel)]="username"/>
+            </div>
+
+            <button class="btn btn-primary" type="submit" (click)="ingresar()">Ingresar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
